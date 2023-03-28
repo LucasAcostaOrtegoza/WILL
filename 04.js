@@ -14,6 +14,19 @@ function numeroSimetrico(num) {
 
   // Tu código:
 
+var numstring=num.toString();
+var arrayNum=numstring.split("");
+var arrayNumSimetrico=[];
+var numstringSimetrico=""
+for(let i=arrayNum.length-1;i>=0;i--){
+arrayNumSimetrico.push(arrayNum[i]);
+}
+numstringSimetrico=arrayNumSimetrico.join("");
+if(numstring===numstringSimetrico){
+  return true;
+}else{
+  return false;
+}
 }
 
 // No modifiques nada debajo de esta linea //
